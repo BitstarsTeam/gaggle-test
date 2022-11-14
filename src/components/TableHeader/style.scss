@@ -1,0 +1,29 @@
+@import "../../assets/colors";
+
+.table-header {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ padding: 10px 0px;
+ background-color: #EBEBEB;
+
+ &-date {
+	margin-right: 200px;
+	color: #747474;
+	font-size: 14px;
+	font-family: 'Roboto-Bold';
+ }
+
+ &-tag {
+	margin: 0px 20px;
+	color: #747474;
+	font-size: 14px;
+	font-family: 'Roboto-Bold';
+ }
+
+ input {
+	margin: 0px 40px 0px 20px;
+	width: 24px;
+	height: 24px;
+ }
+}

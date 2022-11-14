@@ -1,0 +1,21 @@
+@import "../../assets/colors";
+
+.header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: #EBEBEB;
+	height: 57px;
+
+	&-spinner {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: auto;
+		margin-top: 5px;
+		padding-right: 10px;
+
+		span {
+			font-size: 12px;
+		}
+	}
+}

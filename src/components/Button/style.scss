@@ -1,0 +1,19 @@
+@import "../../assets/colors";
+
+.form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-blue;
+	width: 103px;
+  height: 32px;
+  border-radius: 5px;
+  margin: 15px auto;
+  border: none;
+  cursor: pointer;
+  span {
+    color: $white;
+		font-size: 14px;
+		font-family: Roboto-Bold;
+  }
+}

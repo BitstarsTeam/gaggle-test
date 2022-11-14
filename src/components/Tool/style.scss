@@ -1,0 +1,16 @@
+@import "../../assets/colors";
+
+.tool {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+
+	&-title {
+		font-size: 10px;
+		color: #747474;
+		margin-top: 3px;
+		font-family: 'Roboto-Bold';
+	}
+}

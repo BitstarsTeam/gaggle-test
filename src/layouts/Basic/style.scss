@@ -1,0 +1,17 @@
+@import "../../assets/colors";
+
+.basic-layout {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $grey;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.loader {
+	top: 40%;
+	left: 50%;
+	position: fixed;
+}
