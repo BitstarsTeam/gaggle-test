@@ -28,8 +28,8 @@ export const RegisterDialog: React.FC<Props> = ({ onClose, open }) => {
   return (
     <Dialog onClose={() => onClose()} open={open}>
       <div className="dialog">
-        <div className="dialog-logo">
-          <Image src={ChickenImg} alt="chicken" />
+        <div className="dialog-logo d-none d-md-block">
+          <Image src={ChickenImg} />
         </div>
         <Form className="dialog-form">
           <div className="dialog-title">

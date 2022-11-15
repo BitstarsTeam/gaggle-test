@@ -12,8 +12,10 @@
   border: none;
   cursor: pointer;
   span {
-    color: $white;
-		font-size: 14px;
 		font-family: Roboto-Bold;
+		font-size: 14px;
+    color: $white;
+		letter-spacing: 0.15px;
+		line-height: 20px
   }
 }

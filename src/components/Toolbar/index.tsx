@@ -1,28 +1,21 @@
-import { Tool } from "components";
-import { FaSearch, FaFilter, FaFileDownload } from "react-icons/fa";
+import { ToolMenu, ToolButton } from "components";
+import { Row, Col } from "react-bootstrap";
 import "./style.scss";
 
 export const Toolbar = ({}) => {
   return (
-    <div className="toolbar">
-      <Tool title="Button 1">
-        <FaSearch style={{ width: "14px", height: "14px", color: "#4B4B4B" }} />
-      </Tool>
-      <Tool title="Button 2">
-        <FaSearch style={{ width: "14px", height: "14px", color: "#4B4B4B" }} />
-      </Tool>
-      <Tool title="Button 3">
-        <FaSearch style={{ width: "14px", height: "14px", color: "#4B4B4B" }} />
-      </Tool>
-      <Tool title="Filter by Keyword">
-        <FaFilter style={{ width: "14px", height: "14px", color: "#4B4B4B" }} />
-        <span className="toolbar-find">Find...</span>
-      </Tool>
-      <Tool title="Export">
-        <FaFileDownload
-          style={{ width: "14px", height: "14px", color: "#4B4B4B" }}
-        />
-      </Tool>
-    </div>
+    <Row className="toolbar">
+			<Col xs={12} md={4} className="toolbar-column">
+				<ToolButton title="Button 1" />
+				<ToolButton title="Button 2" />
+				<ToolButton title="Button 3" />
+			</Col>
+			<Col md={4}></Col>
+			<Col md={4} className="toolbar-column pl-auto">
+				<div className="flex-md-grow-1" />
+				<ToolButton title="Filter by Keyword" />
+				<ToolMenu title="Export" />
+			</Col>
+    </Row>
   );
 };

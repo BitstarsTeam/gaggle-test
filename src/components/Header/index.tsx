@@ -12,8 +12,8 @@ export const Header = ({}) => {
       <FaTh
         style={{
           marginLeft: "10px",
-          width: "40px",
-          height: "40px",
+          width: "2.92rem",
+          height: "2.92rem",
           color: "#C5C5C5",
         }}
       />

@@ -1,13 +1,23 @@
 @import "../../assets/colors";
 
 .toolbar {
-	display: flex;
-	flex-direction: row;
 	padding: 10px 20px 0 20px;
 	background-color: #EBEBEB;
+	
+	&-column {
+		display: flex;
+		flex-direction: row;
+	}
+	&-icon {
+		width: 14px;
+		height: 14px;
+		color: #4B4B4B;
+		margin-left: 5px;
+	}
 	&-find {
-			font-size: 14px;
-			color: #CBCBCB;
-			margin-left: 10px;
+		border: none;
+		outline: none;
+		font-size: 14px;
+		margin-left: 10px;
 	}
 }

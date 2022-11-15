@@ -24,7 +24,7 @@ export const FormInput: React.FC<Props> = ({
   updateValue,
 }) => {
   const [inputVal, setInputVal] = useState<string>(value);
-  const [eyeShow, setEyeShow] = useState<boolean>(false);
+  const [eyeShow, setEyeShow] = useState<boolean>(true);
   const [inputType, setInputType] = useState<string>(type);
   const [submitClick, setSubmitClick] = useState<boolean>(false);
   const [clicked, setClicked] = useState<boolean>(false);
@@ -71,9 +71,6 @@ export const FormInput: React.FC<Props> = ({
           <Image
             src={AlertImg}
             className="form-input-alert"
-            onClick={() => {
-              setInputVal("");
-            }}
           />
         )}
         <input
@@ -91,9 +88,10 @@ export const FormInput: React.FC<Props> = ({
           <Image
             src={SaltireImg}
             className="form-input-eye"
-            onClick={() => {
-              setInputVal("");
-            }}
+						onClick={() => {
+							setInputVal("");
+							updateValue("");
+						}}
           />
         )}
       </div>

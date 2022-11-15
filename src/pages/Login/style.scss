@@ -1,11 +1,14 @@
 @import "../../assets/colors";
 
 .login {
+	background-color: $grey;
+	overflow-y: hidden;
   &-row {
     height: 100vh;
   }
 	&-logo {
-		height: 32px;
+		width: 10.92rem;
+		height: 2.92rem;
 		margin: 10px;
 		margin-right: auto;
 	}
@@ -18,12 +21,14 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
 		&-link {
-			color: $dark-blue;
-			font-size: 14px;
-			cursor: pointer;
 			font-family: Roboto-Medium;
+			font-size: 14px;
+			color: $dark-blue;
+			letter-spacing: 0.15px;
+			line-height: 20px;
+			cursor: pointer;
 		}
 		tr {
 			opacity: 0.2;
@@ -35,7 +40,7 @@
 		width: 50%;
 	}
 	&-logo {
-	width: 100%;
-	height: 100%;
+		width: 100%;
+		height: 100%;
 	}
 }

@@ -25,7 +25,7 @@ export const LoginPage: React.FC<RouteComponentProps> = () => {
   };
 
   return (
-    <Container fluid>
+    <Container fluid className="login">
       <Row className="login-row">
         <Col className="d-flex flex-column p-0">
           <Image src={LogoImg} className="login-logo" />
@@ -38,7 +38,7 @@ export const LoginPage: React.FC<RouteComponentProps> = () => {
               updateValue={(val) => setName(val)}
             />
             <FormInput
-              type="text"
+              type="password"
               label="Password"
               value={password}
               submitted={submitted}
@@ -67,8 +67,15 @@ export const LoginPage: React.FC<RouteComponentProps> = () => {
             <Col></Col>
           </Row>
         </Col>
-        <Col className="p-0 d-none d-md-block">
-          <Image src={HeroImg} alt="hero-logo" className="hero-logo" />
+        <Col
+          className="p-0 d-none d-md-block"
+          style={{
+            width: "100%",
+            height: "100%",
+						backgroundSize: 'cover',
+            backgroundImage: `linear-gradient(0deg, rgba(0,0,0,0.28) 0%, rgba(0,0,0,0.57) 100%), url(${HeroImg})`,
+          }}
+        >
         </Col>
       </Row>
       <RegisterDialog open={open} onClose={() => setOpen(false)} />
